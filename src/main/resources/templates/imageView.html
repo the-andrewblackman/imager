@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraped Wikimedia Images</title>
+    <style>
+        #image-container {
+            display: flex;
+            gap: 15px;
+            padding: 10px;
+        }
+
+        .image-column {
+            flex: 1; /* Each column takes equal space */
+            display: flex;
+            flex-direction: column; /* Images stack vertically in each column */
+            gap: 15px;
+        }
+
+        .image-column img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Ensures images fill their space uniformly */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+<h1>Scraped Images from Wikimedia Commons</h1>
+
+<div id="image-container">
+    <!-- Columns will be added dynamically here by JavaScript -->
+    <div class="image-column"></div>
+    <div class="image-column"></div>
+    <div class="image-column"></div>
+    <div class="image-column"></div>
+    <div class="image-column"></div>
+</div>
+
+<script>
+        // Fetch images from the Spring Boot endpoint
+        fetch('http://localhost:8080/scrape-images')
+            .then(response => response.json()) // Parse JSON response
+            .then(data => {
+                // Get all the columns (there are 5)
+                const columns = document.querySelectorAll('.image-column');
+
+                // Distribute the images into 5 columns evenly
+                data.forEach((image, index) => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = image.imageUrl;
+                    imgElement.alt = image.description;
+
+                    // Add the image to the corresponding column
+                    columns[index % 5].appendChild(imgElement);
+
+                    // Conditionally add description only if it's not empty
+                    if (image.description) {
+                        const description = document.createElement('p');
+                        description.textContent = image.description;
+                        columns[index % 5].appendChild(description);
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('There was a problem fetching the images:', error);
+            });
+    </script>
+</body>
+</html>
