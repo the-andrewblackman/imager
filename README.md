@@ -1,2 +1,2 @@
 # imager
-midjourney showcase image scraper for educational purposes
+wikimedia image scraper for educational purposes
