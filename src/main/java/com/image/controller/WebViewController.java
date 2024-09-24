@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.function.Predicate;
 
 @Controller  // Use @Controller for Thymeleaf templates
 public class WebViewController {
@@ -19,7 +21,7 @@ public class WebViewController {
         @GetMapping("/show-images")
         public String showImages(Model model) {
             List<ImageEntity> imageEntities = new ArrayList<>();
-
+            
            try {
                 // Scrape the images
                 Document doc = Jsoup.connect("https://commons.wikimedia.org/wiki/Category:Pictures_of_the_day_(2008)").get();
