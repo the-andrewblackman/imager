@@ -569,3 +569,45 @@
 2024-09-24 15:26:28 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-09-24 15:26:28 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-09-24 15:26:28 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-24 15:30:58 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 45819 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 15:30:58 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 15:31:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 15:31:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 15:31:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 15:31:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 15:31:02 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 15:31:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4311 ms
+2024-09-24 15:31:03 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 15:31:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 15:31:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 15:31:03 [main] INFO  com.image.ImageApplication - Started ImageApplication in 7.264 seconds (JVM running for 8.825)
+2024-09-24 15:31:05 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 15:31:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 15:31:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-24 15:39:15 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 45864 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 15:39:15 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 15:39:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 15:39:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 15:39:17 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 15:39:17 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 15:39:17 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 15:39:17 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1992 ms
+2024-09-24 15:39:18 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 15:39:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 15:39:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 15:39:18 [main] INFO  com.image.ImageApplication - Started ImageApplication in 3.8 seconds (JVM running for 4.637)
+2024-09-24 15:40:10 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 15:40:10 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 15:40:10 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-09-24 15:43:51 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 45923 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 15:43:51 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 15:43:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 15:43:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 15:43:56 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 15:43:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 15:43:56 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 15:43:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4871 ms
+2024-09-24 15:43:57 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 15:43:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 15:43:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 15:43:57 [main] INFO  com.image.ImageApplication - Started ImageApplication in 6.932 seconds (JVM running for 7.987)

@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scraped Wikimedia Images</title>
     <style>
+         h1 {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: #e74c3c; /* Modern browser support */
+            margin-right: 10px;
+        }
+
+        label {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.2rem;
+            color: #34495e;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
         #image-container {
             display: flex;
             gap: 15px;
@@ -25,11 +52,18 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
+        /* Default hover effect when the checkbox is checked */
+        .grow:hover {
+            transform: scale(1.4);
+        }
     </style>
 </head>
 <body>
 <h1>Scraped Images from Wikimedia Commons</h1>
-
+<label>
+    <input type="checkbox" id="hoverToggle"> Mouse Hover
+</label>
 <div id="image-container">
     <!-- Columns will be added dynamically here by JavaScript -->
     <div class="image-column"></div>
@@ -40,6 +74,20 @@
 </div>
 
 <script>
+  const hoverToggle = document.getElementById('hoverToggle');
+
+    // Function to toggle hover effect
+    hoverToggle.addEventListener('change', () => {
+        const images = document.querySelectorAll('.image-column img');
+        images.forEach(image => {
+            if (hoverToggle.checked) {
+                image.classList.add('grow');
+            } else {
+                image.classList.remove('grow');
+            }
+        });
+    });
+
 fetch('http://localhost:8080/scrape-images')
     .then(response => response.json())  // Parse the JSON response
     .then(data => {
