@@ -40,33 +40,30 @@
 </div>
 
 <script>
-        // Fetch images from the Spring Boot endpoint
-        fetch('http://localhost:8080/scrape-images')
-            .then(response => response.json()) // Parse JSON response
-            .then(data => {
-                // Get all the columns (there are 5)
-                const columns = document.querySelectorAll('.image-column');
+fetch('http://localhost:8080/scrape-images')
+    .then(response => response.json())  // Parse the JSON response
+    .then(data => {
+        const columns = document.querySelectorAll('.image-column');
 
-                // Distribute the images into 5 columns evenly
-                data.forEach((image, index) => {
-                    const imgElement = document.createElement('img');
-                    imgElement.src = image.imageUrl;
-                    imgElement.alt = image.description;
+        data.forEach((image, index) => {
+            const imgElement = document.createElement('img');
+            imgElement.src = image.imageUrl;  // Use the high-quality image URL
+            imgElement.alt = image.description || 'Image';
 
-                    // Add the image to the corresponding column
-                    columns[index % 5].appendChild(imgElement);
+            // Add the image to the corresponding column (5-column layout) one by one
+            columns[index % 5].appendChild(imgElement);
 
-                    // Conditionally add description only if it's not empty
-                    if (image.description) {
-                        const description = document.createElement('p');
-                        description.textContent = image.description;
-                        columns[index % 5].appendChild(description);
-                    }
-                });
-            })
-            .catch(error => {
-                console.error('There was a problem fetching the images:', error);
-            });
+            // Conditionally add description if available
+            if (image.description) {
+                const description = document.createElement('p');
+                description.textContent = image.description;
+                columns[index % 5].appendChild(description);
+            }
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching the images:', error);
+    });
     </script>
 </body>
 </html>
