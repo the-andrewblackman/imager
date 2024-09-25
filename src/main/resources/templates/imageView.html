@@ -5,19 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scraped Wikimedia Images</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            padding: 1rem;
+        }
+        #loadBackground {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(255,255,255,.8);
+            z-index: 9998;
+            display: none;
+        }
+        #loading {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            display: none;
+        }
+        #loading img {
+            width: 200px;
+            height: auto;
+        }
+        .horizontal-elements {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+        }
+        .year-select-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
         #image-container {
             display: flex;
             gap: 15px;
             padding: 10px;
         }
-
         .image-column {
             flex: 1;
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
-
         .image-column img {
             width: 100%;
             height: auto;
@@ -25,18 +66,21 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
         h1 {
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #2c3e50;
+            font-size: 3.5rem;
             text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid blue;
-            padding-bottom: 10px;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            font-size: 56px;
+            font-weight: 600;
+            background-image: url(/trees.png);
+            background-size: 250px;
+            background-repeat: repeat;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
         }
-
         input[type="checkbox"] {
             width: 20px;
             height: 20px;
@@ -47,10 +91,10 @@
         label {
             font-family: 'Arial', sans-serif;
             font-size: 1.2rem;
-            color: #34495e;
+            color: #004a95;
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            padding: .4%;
         }
         select {
             padding: 5px;
@@ -59,60 +103,50 @@
         .grow-on-hover img:hover {
             transform: scale(1.4);
         }
-        #loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-        #loading img {
-            width: 100px;
-            height: auto;
-        }
+
     </style>
 </head>
 <body>
-<h1>PICTURES OF THE YEAR FROM WIKIMEDIA COMMONS</h1>
+<div id="loadBackground"></div>
 
-<label>
-    <input type="checkbox" id="hoverToggle"> Mouse Hover
-</label>
-<div id="loading" style="display: none;">
-    <img src="https://i.gifer.com/origin/d3/d3f472b06590a25cb4372ff289d81711_w200.gif" alt="Loading...">
+<div id="loading">
+    <img src="https://craftwork.design/wp-content/uploads/edd/2024/04/Abstract-Loading-14.gif" alt="Loading...">
 </div>
 
-<!-- Dropdown to select the year -->
-<label for="yearSelect">Select Year:</label>
-<select id="yearSelect">
-    <option value="2004" selected>2004</option>
-    <option value="2005">2005</option>
-    <option value="2006">2006</option>
-    <option value="2007">2007</option>
-    <option value="2008">2008</option>
-    <option value="2009">2009</option>
-    <option value="2010">2010</option>
-    <option value="2011">2011</option>
-    <option value="2012">2012</option>
-    <option value="2013">2013</option>
-    <option value="2014">2014</option>
-    <option value="2015">2015</option>
-    <option value="2016">2016</option>
-    <option value="2017">2017</option>
-    <option value="2018">2018</option>
-    <option value="2019">2019</option>
-    <option value="2020">2020</option>
-    <option value="2021">2021</option>
-    <option value="2022">2022</option>
-    <option value="2023">2023</option>
-    <option value="2024">2024</option>
-</select>
 
+<h1>PICTURES OF THE YEAR FROM WIKIMEDIA COMMONS</h1>
+
+<div class="horizontal-elements">
+    <div class="year-select-container">
+        <label for="yearSelect">Year:</label>
+        <select id="yearSelect">
+            <option value="2004" selected>2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select>
+    </div>
+    <label>
+        <input type="checkbox" id="hoverToggle"> Enlarge Photos
+    </label>
+</div>
 <div id="image-container">
     <div class="image-column"></div>
     <div class="image-column"></div>
@@ -125,7 +159,6 @@
     const hoverToggle = document.getElementById('hoverToggle');
     const yearSelect = document.getElementById('yearSelect');
     const imageContainer = document.getElementById('image-container');
-    const loadingGif = document.getElementById('loading');
 
     hoverToggle.addEventListener('change', () => {
         if (hoverToggle.checked) {
@@ -136,8 +169,19 @@
     });
 
 
+    const loadingGif = document.getElementById('loading');
+    const loadBackground = document.getElementById('loadBackground');
+
     const fetchImages = (year) => {
-        loadingGif.style.display = 'block';  // Show loading gif
+         const columns = document.querySelectorAll('.image-column');
+
+         // Clear previous images before fetching the new ones
+         columns.forEach(column => column.innerHTML = '');
+
+        // Show loading background and gif
+        loadingGif.style.display = 'block';
+        loadBackground.style.display = 'block';
+
         fetch(`http://localhost:8080/scrape-images?year=${year}`)
             .then(response => response.json())
             .then(data => {
@@ -156,20 +200,26 @@
                         columns[index % 5].appendChild(description);
                     }
                 });
-                loadingGif.style.display = 'none';  // Hide loading gif
+            })
+            .finally(() => {
+                // Hide loading background and gif after data is loaded
+                loadingGif.style.display = 'none';
+                loadBackground.style.display = 'none';
             })
             .catch(error => {
                 console.error('Error fetching the images:', error);
-                loadingGif.style.display = 'none';  // Hide loading gif on error
             });
     };
-
     fetchImages('2004');
 
     yearSelect.addEventListener('change', () => {
         const selectedYear = yearSelect.value;
         fetchImages(selectedYear);
     });
+
+
+
+
 </script>
 </body>
 </html>
