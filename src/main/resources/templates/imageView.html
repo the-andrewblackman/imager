@@ -5,14 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scraped Wikimedia Images</title>
     <style>
-         h1 {
+        #image-container {
+            display: flex;
+            gap: 15px;
+            padding: 10px;
+        }
+
+        .image-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .image-column img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             font-size: 2.5rem;
             font-weight: 700;
             color: #2c3e50;
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #e74c3c;
+            border-bottom: 2px solid blue;
             padding-bottom: 10px;
         }
 
@@ -20,10 +41,9 @@
             width: 20px;
             height: 20px;
             cursor: pointer;
-            accent-color: #e74c3c; /* Modern browser support */
+            accent-color: #e74c3c;
             margin-right: 10px;
         }
-
         label {
             font-family: 'Arial', sans-serif;
             font-size: 1.2rem;
@@ -32,40 +52,68 @@
             align-items: center;
             margin-bottom: 20px;
         }
-        #image-container {
-            display: flex;
-            gap: 15px;
-            padding: 10px;
+        select {
+            padding: 5px;
+            font-size: 1.1rem;
         }
-
-        .image-column {
-            flex: 1; /* Each column takes equal space */
-            display: flex;
-            flex-direction: column; /* Images stack vertically in each column */
-            gap: 15px;
-        }
-
-        .image-column img {
-            width: 100%;
-            height: auto;
-            object-fit: cover; /* Ensures images fill their space uniformly */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Default hover effect when the checkbox is checked */
-        .grow:hover {
+        .grow-on-hover img:hover {
             transform: scale(1.4);
+        }
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        #loading img {
+            width: 100px;
+            height: auto;
         }
     </style>
 </head>
 <body>
-<h1>Scraped Images from Wikimedia Commons</h1>
+<h1>PICTURES OF THE YEAR FROM WIKIMEDIA COMMONS</h1>
+
 <label>
     <input type="checkbox" id="hoverToggle"> Mouse Hover
 </label>
+<div id="loading" style="display: none;">
+    <img src="https://i.gifer.com/origin/d3/d3f472b06590a25cb4372ff289d81711_w200.gif" alt="Loading...">
+</div>
+
+<!-- Dropdown to select the year -->
+<label for="yearSelect">Select Year:</label>
+<select id="yearSelect">
+    <option value="2004" selected>2004</option>
+    <option value="2005">2005</option>
+    <option value="2006">2006</option>
+    <option value="2007">2007</option>
+    <option value="2008">2008</option>
+    <option value="2009">2009</option>
+    <option value="2010">2010</option>
+    <option value="2011">2011</option>
+    <option value="2012">2012</option>
+    <option value="2013">2013</option>
+    <option value="2014">2014</option>
+    <option value="2015">2015</option>
+    <option value="2016">2016</option>
+    <option value="2017">2017</option>
+    <option value="2018">2018</option>
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+</select>
+
 <div id="image-container">
-    <!-- Columns will be added dynamically here by JavaScript -->
     <div class="image-column"></div>
     <div class="image-column"></div>
     <div class="image-column"></div>
@@ -74,44 +122,54 @@
 </div>
 
 <script>
-  const hoverToggle = document.getElementById('hoverToggle');
+    const hoverToggle = document.getElementById('hoverToggle');
+    const yearSelect = document.getElementById('yearSelect');
+    const imageContainer = document.getElementById('image-container');
+    const loadingGif = document.getElementById('loading');
 
-    // Function to toggle hover effect
     hoverToggle.addEventListener('change', () => {
-        const images = document.querySelectorAll('.image-column img');
-        images.forEach(image => {
-            if (hoverToggle.checked) {
-                image.classList.add('grow');
-            } else {
-                image.classList.remove('grow');
-            }
-        });
+        if (hoverToggle.checked) {
+            imageContainer.classList.add('grow-on-hover');
+        } else {
+            imageContainer.classList.remove('grow-on-hover');
+        }
     });
 
-fetch('http://localhost:8080/scrape-images')
-    .then(response => response.json())  // Parse the JSON response
-    .then(data => {
-        const columns = document.querySelectorAll('.image-column');
 
-        data.forEach((image, index) => {
-            const imgElement = document.createElement('img');
-            imgElement.src = image.imageUrl;  // Use the high-quality image URL
-            imgElement.alt = image.description || 'Image';
+    const fetchImages = (year) => {
+        loadingGif.style.display = 'block';  // Show loading gif
+        fetch(`http://localhost:8080/scrape-images?year=${year}`)
+            .then(response => response.json())
+            .then(data => {
+                const columns = document.querySelectorAll('.image-column');
+                columns.forEach(column => column.innerHTML = ''); // Clear previous images
 
-            // Add the image to the corresponding column (5-column layout) one by one
-            columns[index % 5].appendChild(imgElement);
+                data.forEach((image, index) => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = image.imageUrl;
+                    imgElement.alt = image.description || 'Image';
+                    columns[index % 5].appendChild(imgElement);
 
-            // Conditionally add description if available
-            if (image.description) {
-                const description = document.createElement('p');
-                description.textContent = image.description;
-                columns[index % 5].appendChild(description);
-            }
-        });
-    })
-    .catch(error => {
-        console.error('Error fetching the images:', error);
+                    if (image.description) {
+                        const description = document.createElement('p');
+                        description.textContent = image.description;
+                        columns[index % 5].appendChild(description);
+                    }
+                });
+                loadingGif.style.display = 'none';  // Hide loading gif
+            })
+            .catch(error => {
+                console.error('Error fetching the images:', error);
+                loadingGif.style.display = 'none';  // Hide loading gif on error
+            });
+    };
+
+    fetchImages('2004');
+
+    yearSelect.addEventListener('change', () => {
+        const selectedYear = yearSelect.value;
+        fetchImages(selectedYear);
     });
-    </script>
+</script>
 </body>
 </html>

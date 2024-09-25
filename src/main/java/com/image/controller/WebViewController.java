@@ -7,6 +7,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.io.IOException;
@@ -19,15 +20,16 @@ public class WebViewController {
 
     @GetMapping("/scrape-images")
     @ResponseBody  // This ensures the data is returned as JSON
-    // HashSet to store URLs that returned a 404 error
-    public List<ImageEntity> showImages() {
+    public List<ImageEntity> showImages(@RequestParam(defaultValue = "2024") int year) {
         List<ImageEntity> imageEntities = new ArrayList<>();
         HashSet<String> invalidUrls = new HashSet<>();
         HashSet<String> doubleUrls = new HashSet<>();
 
+        String url = "https://commons.wikimedia.org/wiki/Category:Pictures_of_the_day_(" + year + ")";
+
         try {
             // Connect to the Wikimedia page
-            Document doc = Jsoup.connect("https://commons.wikimedia.org/wiki/Category:Pictures_of_the_day_(2008)").get();
+            Document doc = Jsoup.connect(url).get();
             Elements imageLinks = doc.select("a[href^='/wiki/File:']");
 
             // Iterate over each image link
@@ -35,11 +37,11 @@ public class WebViewController {
                 String href = link.attr("href");
                 String filePageUrl = "https://commons.wikimedia.org" + href;
 
-                if(!doubleUrls.add(filePageUrl)){
-                    System.out.println("Skipping double link");
+                // Skip if URL is a duplicate or was previously invalid
+                if (!doubleUrls.add(filePageUrl)) {
+                    System.out.println("Skipping duplicate link: " + filePageUrl);
                     continue;
                 }
-                // Skip if URL is in invalidUrls set
                 if (invalidUrls.contains(filePageUrl)) {
                     System.out.println("Skipping previously invalid URL: " + filePageUrl);
                     continue;
@@ -61,7 +63,7 @@ public class WebViewController {
                         imageEntities.add(new ImageEntity(highResImageUrl, ""));
                     }
                 } catch (IOException e) {
-                    // If 404 error, add the URL to the invalidUrls set
+                    // Add to invalidUrls set on 404 or connection errors
                     System.out.println("Skipping URL: " + filePageUrl + " due to 404 error.");
                     invalidUrls.add(filePageUrl);
                 }
@@ -72,5 +74,6 @@ public class WebViewController {
 
         return imageEntities;
     }
+
 }
 

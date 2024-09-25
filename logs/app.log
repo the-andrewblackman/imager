@@ -611,3 +611,318 @@
 2024-09-24 15:43:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 2024-09-24 15:43:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2024-09-24 15:43:57 [main] INFO  com.image.ImageApplication - Started ImageApplication in 6.932 seconds (JVM running for 7.987)
+2024-09-24 15:51:16 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 15:51:16 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 15:51:16 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-09-24 15:51:50 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46134 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 15:51:50 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 15:51:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 15:51:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 15:51:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 15:51:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 15:51:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 15:51:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3655 ms
+2024-09-24 15:51:54 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 15:51:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 15:51:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 15:51:54 [main] INFO  com.image.ImageApplication - Started ImageApplication in 5.498 seconds (JVM running for 6.273)
+2024-09-24 15:51:57 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 15:51:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 15:51:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-09-24 15:52:39 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46151 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 15:52:39 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 15:52:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 15:52:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 15:52:41 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 15:52:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 15:52:41 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 15:52:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2377 ms
+2024-09-24 15:52:42 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 15:52:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 15:52:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 15:52:42 [main] INFO  com.image.ImageApplication - Started ImageApplication in 4.167 seconds (JVM running for 5.022)
+2024-09-24 15:52:42 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 15:52:42 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 15:52:42 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-24 16:01:57 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46204 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:01:57 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:02:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:02:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:02:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:02:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:02:00 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:02:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2706 ms
+2024-09-24 16:02:01 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:02:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:02:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:02:01 [main] INFO  com.image.ImageApplication - Started ImageApplication in 4.702 seconds (JVM running for 5.697)
+2024-09-24 16:02:02 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:02:02 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:02:02 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-09-24 16:04:07 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46222 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:04:07 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:04:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:04:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:04:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:04:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:04:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:04:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2301 ms
+2024-09-24 16:04:10 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:04:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:04:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:04:11 [main] INFO  com.image.ImageApplication - Started ImageApplication in 4.122 seconds (JVM running for 5.19)
+2024-09-24 16:04:31 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:04:31 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:04:31 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-09-24 16:06:52 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46241 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:06:52 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:06:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:06:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:06:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:06:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:06:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:06:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1970 ms
+2024-09-24 16:06:55 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:06:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:06:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:06:55 [main] INFO  com.image.ImageApplication - Started ImageApplication in 3.804 seconds (JVM running for 4.618)
+2024-09-24 16:07:18 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:07:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:07:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-24 16:10:00 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46263 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:10:00 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:10:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:10:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:10:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:10:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:10:03 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:10:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2734 ms
+2024-09-24 16:10:04 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:10:04 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:10:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:10:04 [main] INFO  com.image.ImageApplication - Started ImageApplication in 5.285 seconds (JVM running for 6.388)
+2024-09-24 16:10:07 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:10:07 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:10:07 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-09-24 16:19:24 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46308 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:19:24 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:19:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:19:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:19:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:19:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:19:26 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:19:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2001 ms
+2024-09-24 16:19:27 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:19:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:19:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:19:27 [main] INFO  com.image.ImageApplication - Started ImageApplication in 3.755 seconds (JVM running for 4.528)
+2024-09-24 16:20:20 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46316 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:20:20 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:20:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:20:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:20:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:20:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:20:23 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:20:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2503 ms
+2024-09-24 16:20:24 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:20:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:20:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:20:24 [main] INFO  com.image.ImageApplication - Started ImageApplication in 4.627 seconds (JVM running for 5.891)
+2024-09-24 16:20:27 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:20:27 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:20:27 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-09-24 16:20:56 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46323 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:20:56 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:20:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:20:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:20:59 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:20:59 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:20:59 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:20:59 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3034 ms
+2024-09-24 16:21:00 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:21:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:21:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:21:01 [main] INFO  com.image.ImageApplication - Started ImageApplication in 6.075 seconds (JVM running for 7.086)
+2024-09-24 16:21:05 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:21:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:21:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-09-24 16:24:06 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46360 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:24:06 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:24:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:24:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:24:08 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:24:08 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:24:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:24:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2195 ms
+2024-09-24 16:24:09 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:24:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:24:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:24:09 [main] INFO  com.image.ImageApplication - Started ImageApplication in 4.513 seconds (JVM running for 5.341)
+2024-09-24 16:24:11 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:24:11 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:24:11 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-09-24 16:27:16 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46371 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:27:16 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:27:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:27:19 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:27:19 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:27:19 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:27:19 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:27:19 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3121 ms
+2024-09-24 16:27:20 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:27:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:27:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:27:21 [main] INFO  com.image.ImageApplication - Started ImageApplication in 5.591 seconds (JVM running for 6.541)
+2024-09-24 16:27:22 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:27:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:27:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-09-24 16:30:19 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46389 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:30:19 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:30:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:30:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:30:21 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:30:21 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:30:21 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:30:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2151 ms
+2024-09-24 16:30:22 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:30:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:30:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:30:22 [main] INFO  com.image.ImageApplication - Started ImageApplication in 4.08 seconds (JVM running for 5.012)
+2024-09-24 16:30:22 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:30:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:30:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-24 16:39:33 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46431 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:39:33 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:39:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:39:35 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:39:35 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:39:35 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:39:35 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:39:35 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2380 ms
+2024-09-24 16:39:36 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:39:36 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:39:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:39:36 [main] INFO  com.image.ImageApplication - Started ImageApplication in 4.269 seconds (JVM running for 5.123)
+2024-09-24 16:40:36 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:40:36 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:40:36 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-24 16:45:11 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46481 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:45:11 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:45:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:45:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:45:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:45:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:45:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:45:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2508 ms
+2024-09-24 16:45:14 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:45:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:45:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:45:14 [main] INFO  com.image.ImageApplication - Started ImageApplication in 4.739 seconds (JVM running for 6.375)
+2024-09-24 16:46:21 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:46:21 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:46:21 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-09-24 16:51:48 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46511 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:51:48 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:51:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:51:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:51:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:51:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:51:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:51:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2404 ms
+2024-09-24 16:51:51 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:51:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:51:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:51:51 [main] INFO  com.image.ImageApplication - Started ImageApplication in 4.197 seconds (JVM running for 5.355)
+2024-09-24 16:51:52 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:51:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:51:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-24 16:57:15 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46558 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:57:15 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:57:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:57:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:57:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:57:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:57:20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:57:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4655 ms
+2024-09-24 16:57:21 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:57:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:57:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:57:22 [main] INFO  com.image.ImageApplication - Started ImageApplication in 8.34 seconds (JVM running for 9.768)
+2024-09-24 16:57:22 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:57:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:57:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-09-24 16:58:08 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46566 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:58:08 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:58:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:58:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:58:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:58:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:58:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:58:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3551 ms
+2024-09-24 16:58:13 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:58:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:58:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:58:13 [main] INFO  com.image.ImageApplication - Started ImageApplication in 6.042 seconds (JVM running for 7.786)
+2024-09-24 16:58:14 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:58:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:58:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-09-24 16:59:33 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46589 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 16:59:33 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 16:59:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 16:59:37 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:59:37 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 16:59:37 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 16:59:37 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 16:59:37 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3351 ms
+2024-09-24 16:59:38 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 16:59:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 16:59:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 16:59:38 [main] INFO  com.image.ImageApplication - Started ImageApplication in 6.223 seconds (JVM running for 7.626)
+2024-09-24 16:59:39 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 16:59:39 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 16:59:39 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-24 17:01:52 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46615 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 17:01:52 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 17:01:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 17:01:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 17:01:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 17:01:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 17:01:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 17:01:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2541 ms
+2024-09-24 17:01:56 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 17:01:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 17:01:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 17:01:56 [main] INFO  com.image.ImageApplication - Started ImageApplication in 4.375 seconds (JVM running for 5.531)
+2024-09-24 17:01:56 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 17:01:56 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 17:01:56 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-24 17:03:31 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46632 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 17:03:31 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 17:03:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 17:03:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 17:03:34 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 17:03:34 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 17:03:34 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 17:03:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2233 ms
+2024-09-24 17:03:35 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 17:03:35 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 17:03:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 17:03:35 [main] INFO  com.image.ImageApplication - Started ImageApplication in 4.836 seconds (JVM running for 6.019)
+2024-09-24 17:03:51 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 17:03:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 17:03:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-09-24 17:06:16 [main] INFO  com.image.ImageApplication - Starting ImageApplication using Java 1.8.0_402 on MacBooks-MBP.lan with PID 46661 (/Users/macbookpro/Documents/image_scrape/springboot_template/target/classes started by macbookpro in /Users/macbookpro/Documents/image_scrape/springboot_template)
+2024-09-24 17:06:16 [main] INFO  com.image.ImageApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-24 17:06:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-24 17:06:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-24 17:06:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-24 17:06:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-09-24 17:06:18 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-24 17:06:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2166 ms
+2024-09-24 17:06:19 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-09-24 17:06:19 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-24 17:06:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-24 17:06:19 [main] INFO  com.image.ImageApplication - Started ImageApplication in 4.034 seconds (JVM running for 4.867)
+2024-09-24 17:06:41 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24 17:06:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-24 17:06:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
